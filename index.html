@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,17 @@
     <title>Play Now</title>
     <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="style.css">
+    <!-- PWA stuff -->
+    <link rel="manifest" href="manifest.json">
+    <!-- Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Weather PWA">
+    <link rel="apple-touch-icon" href="img/logo_152.png">
+    <!-- Add description here -->
+    <meta name="description" content="Helper apps to play board games">
+    <!-- Address bar theme-color -->
+    <meta name="theme-color" content="#D32F2F" />
 </head>
 <body>
     <div class="container">
@@ -32,4 +44,15 @@
   <script type="text/javascript" src="js/words.js"></script>
   <script type="text/javascript" src="js/draw.js"></script>
   <script type="text/javascript" src="js/actions.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('service-worker.js')
+            .then((reg) => {
+              console.log('Service worker registered.', reg);
+            });
+      });
+    }
+
+  </script>
 </body>
