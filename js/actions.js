@@ -73,6 +73,12 @@ function showFullscreenCanvas() {
     canvas.width = 2*window.innerWidth;
     canvas.height = 2*window.innerHeight;
     container.prepend(canvas);
+
+    let undo = document.createElement("div");
+    undo.innerHTML = "↺";
+    undo.className = "fullscreen-undo";
+    container.appendChild(undo);
+
     initializeDraw(canvas);
 }
 

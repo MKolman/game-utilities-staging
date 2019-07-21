@@ -16,6 +16,25 @@ function initializeDraw(sigCanvas) {
   context.lineJoin = "round";
   context.lineWidth = 10;
 
+  var linesDrawn = [];
+  function undoLine() {
+    console.log(linesDrawn);
+    clearCanvas(sigCanvas, context);
+    linesDrawn.pop();
+    for (let line = 0; line < linesDrawn.length; line++) {
+      for (let segment = 0; segment < linesDrawn[line].length; segment++) {
+        if (segment == 0) {
+          context.moveTo(linesDrawn[line][segment][0], linesDrawn[line][segment][1]);
+          context.beginPath();
+        } else {
+          context.lineTo(linesDrawn[line][segment][0], linesDrawn[line][segment][1]);
+        }
+      }
+      context.stroke();
+    }
+  }
+  document.getElementsByClassName('fullscreen-undo')[0].addEventListener("click", undoLine);
+
   // This will be defined on a TOUCH device such as iPad or Android, etc.
   var is_touch_device = 'ontouchstart' in document.documentElement;
 
@@ -27,11 +46,13 @@ function initializeDraw(sigCanvas) {
         context.beginPath();
         context.moveTo(coors.x, coors.y);
         this.isDrawing = true;
+        linesDrawn.push([[coors.x, coors.y],]);
       },
       touchmove: function(coors) {
         if (this.isDrawing) {
           context.lineTo(coors.x, coors.y);
           context.stroke();
+          linesDrawn[linesDrawn.length - 1].push([coors.x, coors.y]);
         }
       },
       touchend: function(coors) {
@@ -88,6 +109,7 @@ function initializeDraw(sigCanvas) {
 
       context.lineTo(position.X, position.Y);
       context.stroke();
+      linesDrawn[linesDrawn.length - 1].push([position.X, position.Y]);
     }
 
     // draws a line from the last coordiantes in the path to the finishing
@@ -111,6 +133,7 @@ function initializeDraw(sigCanvas) {
       var position = getPosition(mouseEvent, sigCanvas);
       context.moveTo(position.X, position.Y);
       context.beginPath();
+      linesDrawn.push([[position.X, position.Y]]);
 
       // attach event handlers
       sigCanvas.addEventListener('mousemove', drawLine);
