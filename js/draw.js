@@ -46,7 +46,7 @@ function initializeDraw(sigCanvas) {
         context.beginPath();
         context.moveTo(coors.x, coors.y);
         this.isDrawing = true;
-        linesDrawn.push([[coors.x, coors.y],]);
+        linesDrawn.push([[coors.x, coors.y], [coors.x, coors.y]]);
       },
       touchmove: function(coors) {
         if (this.isDrawing) {
