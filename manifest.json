@@ -29,5 +29,6 @@
   "start_url": "/game-utilities/",
   "display": "standalone",
   "background_color": "#EEEEEE",
-  "theme_color": "#D32F2F"
+  "theme_color": "#D32F2F",
+  "orientation": "natural"
 }
