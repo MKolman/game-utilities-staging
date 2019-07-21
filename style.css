@@ -1,0 +1,113 @@
+body {
+    background-color: #eee;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+}
+a {
+    color: #d32f2f;
+}
+
+.footer {
+    margin-top: 10em;
+}
+
+.container {
+    margin: 4em auto;
+    width: 800px;
+    text-align: center;
+}
+
+.btn.btm {
+    margin-top: 1em;
+    width: 100%;
+}
+.btn {
+    cursor: pointer;
+    display: inline-table;
+    width: 49%;
+    /*width: 100%;*/
+    background-color: #d32f2f;
+    color: white;
+    border-radius: 1em;
+    font-size: 3em;
+    height: 2em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.btn > span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+@media screen and (max-width: 800px) {
+    .btn {
+        width: 100%
+    }
+    .container {
+        width: 100%;
+    }
+}
+
+.blink {
+    animation-duration: 0.8s;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+.fullscreenify {
+    white-space: nowrap;
+}
+.fullscreenify.vertical {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    margin-top: 5%;
+}
+
+.fullscreen-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #eee;
+}
+.fullscreen-bg input {
+    margin-top: 0em;
+    text-align: center;
+    border: none;
+    font-size: 3em;
+    width: 100%;
+}
+.fullscreen-bg .fullscreen-close {
+    position: fixed;
+    top: 0.1em;
+    left: 0.1em;
+    font-size: 3em;
+    height: 1.5em;
+    width: 1.5em;
+    color: #d32f2f;
+    /*// background-color: yellow;*/
+    /*// border-radius: 1em;*/
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+

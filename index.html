@@ -1,0 +1,35 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Maks Kolman">
+    <link rel="shortcut icon" type="image/png" href="img/logo_256.png"/>
+    <title>Play Now</title>
+    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <span onclick="showFullscreenCanvas();" class="btn" style="font-family: 'Cookie', Helvetica, sans-serif;">
+            <span>DRAW</span>
+        </span>
+        <span onclick="showFullscreenInput();" class="btn" style="font-family: 'monospace';">
+            <span>TYPE<span class="blink">|</span></span>
+        </span>
+        <h1> RANDOM WORD </h1>
+        <span onclick="showRandomWord('unique');" class="btn" style="font-family: 'serif';">
+            <span>UNIQUE</span>
+        </span>
+        <span onclick="showRandomWord('alias');" class="btn" style="font-family: 'serif';">
+            <span>ALIAS</span>
+        </span>
+    </div>
+    <div class="footer">
+        <div class="container">
+            Hosted on <a href="https://github.com/MKolman/game-utilities">GitHub</a>. Go to the <a href="https://kolman.si">home page</a>.
+        </div>
+    </div>
+  <script type="text/javascript" src="js/words.js"></script>
+  <script type="text/javascript" src="js/draw.js"></script>
+  <script type="text/javascript" src="js/actions.js"></script>
+</body>
