@@ -1,13 +1,25 @@
 function getFullscreenBg() {
+    let hash = window.location.hash;
+    if (!hash || hash.length > 3) {
+        hash = "#i";
+    } else {
+        hash += "i";
+    }
+    if(history.pushState) {
+        history.pushState(null, null, hash);
+    }
+
     let container = document.createElement("div");
     container.className = "fullscreen-bg";
 
     let close = document.createElement("div");
     close.innerHTML = "✕";
-    // close.innerHTML = "x";
     close.className = "fullscreen-close";
     close.addEventListener("click", () => container.remove())
     container.appendChild(close);
+    window.addEventListener("hashchange", () => {
+        container.remove();
+    });
 
     document.body.appendChild(container);
     return container;
