@@ -112,7 +112,8 @@ function countDown(numSeconds, callback) {
     }, 1000);
 }
 function showRandomWord(key) {
-    let word = randomElement(WORDLIST[key]);
+    let lang = document.querySelector('input[name="lang"]:checked').value;
+    let word = randomElement(WORDLIST[lang][key]);
     countDown(3, () => showFullscreenText(word));
 }
 
