@@ -37,6 +37,30 @@ a {
     display: table-cell;
     vertical-align: middle;
 }
+.btn.scr > span {
+    width: 19%;
+    display: inline-block;
+    height: 100%;
+    font-size: smaller;
+    padding-top: 0.5em;
+}
+
+.btn.scr > span.border {
+    border-right: #eee 2px solid;
+    border-left: #eee 2px solid;
+}
+.btn.scr > input {
+    width: 20%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    border: none;
+    font-size: 1em;
+    text-align: center;
+}
 
 @media screen and (max-width: 800px) {
     .btn {
@@ -124,4 +148,14 @@ input[type="radio"].lang+label img {
 }
 input[type="radio"].lang:checked+label img{
     border-color: #d32f2f;
+}
+
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
 }

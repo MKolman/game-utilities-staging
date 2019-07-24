@@ -117,6 +117,11 @@ function showRandomWord(key) {
     countDown(3, () => showFullscreenText(word));
 }
 
+function changeScore(delta, event) {
+    let input = event.target.parentElement.querySelector("input");
+    input.value = (+input.value) + delta;
+}
+
 function showDisplaySize() {
     let str = "";
     str += "window.innerWidth: " + window.innerWidth
