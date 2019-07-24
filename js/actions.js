@@ -1,3 +1,10 @@
+
+var isPwa = new URL(window.location.href).searchParams.get("pwa");
+function logGA(action) {
+    if (window.ga) {
+        ga('send', 'event', 'game', action, isPwa);
+    }
+}
 function getFullscreenBg() {
     let hash = window.location.hash;
     if (!hash || hash.length > 3) {
@@ -52,6 +59,7 @@ function showFullscreenText(txt) {
 }
 
 function showFullscreenInput() {
+    logGA('type');
     let containerBg = getFullscreenBg();
     let container = document.createElement("div");
     container.className = "container";
@@ -79,6 +87,7 @@ function showFullscreenInput() {
 }
 
 function showFullscreenCanvas() {
+    logGA('draw');
     let container = getFullscreenBg();
     let canvas = document.createElement("canvas");
     canvas.className = "fullscreen-bg";
@@ -113,11 +122,13 @@ function countDown(numSeconds, callback) {
 }
 function showRandomWord(key) {
     let lang = document.querySelector('input[name="lang"]:checked').value;
+    logGA("word_" + key + '_' + lang);
     let word = randomElement(WORDLIST[lang][key]);
     countDown(3, () => showFullscreenText(word));
 }
 
 function changeScore(delta, event) {
+    logGA("score_" + delta);
     let input = event.target.parentElement.querySelector("input");
     input.value = (+input.value) + delta;
 }

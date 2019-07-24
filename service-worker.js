@@ -1,7 +1,7 @@
 'use strict';
 
 // Update cache names any time any of the cached files change.
-const CACHE_NAME = 'static-cache-v3';
+const CACHE_NAME = 'static-cache-v4';
 
 const FILES_TO_CACHE = [
   'index.html', 'js/draw.js', 'js/words.js', 'js/actions.js', 'style.css',
