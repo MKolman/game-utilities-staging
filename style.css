@@ -97,11 +97,12 @@ a {
 
 .fullscreenify {
     white-space: nowrap;
+    width: 100%;
+    height: 100%;
 }
 .fullscreenify.vertical {
     writing-mode: vertical-rl;
     text-orientation: sideways;
-    margin-top: 5%;
 }
 
 .fullscreen-bg {
