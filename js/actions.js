@@ -44,6 +44,7 @@ function fullscreenify(element) {
     element.className += " fullscreenify";
     let zoom = Math.min(window.innerWidth/width, window.innerHeight/height);
     element.style.zoom = zoom * 0.9 * 100 + "%";
+    element.style["-moz-transform"] = "scale(" + (zoom * 0.9) + ")";
     element.style.opacity = 1;
 }
 

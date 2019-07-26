@@ -37,6 +37,9 @@ a {
     display: table-cell;
     vertical-align: middle;
 }
+.btn.scr {
+    display: inline-block;
+}
 .btn.scr > span {
     width: 19%;
     display: inline-block;
@@ -97,10 +100,10 @@ a {
 
 .fullscreenify {
     white-space: nowrap;
-    width: 100%;
-    height: 100%;
+    display: inline-block
 }
 .fullscreenify.vertical {
+    height: 100%;
     writing-mode: vertical-rl;
     text-orientation: sideways;
 }
