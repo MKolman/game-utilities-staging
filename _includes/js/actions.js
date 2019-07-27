@@ -1,10 +1,3 @@
-
-var isPwa = new URL(window.location.href).searchParams.get("pwa");
-function logGA(action) {
-    if (window.ga) {
-        ga('send', 'event', 'game', action, isPwa);
-    }
-}
 function getFullscreenBg() {
     let hash = window.location.hash;
     if (!hash || hash.length > 3) {
@@ -133,17 +126,3 @@ function changeScore(delta, event) {
     let input = event.target.parentElement.querySelector("input");
     input.value = (+input.value) + delta;
 }
-
-function showDisplaySize() {
-    let str = "";
-    str += "window.innerWidth: " + window.innerWidth
-            + "<br> window.innerHeight: " + window.innerHeight + "<br>";
-    str += "window.outerWidth: " + window.outerWidth
-            + "<br> window.outerHeight: " + window.outerHeight + "<br>";
-    for (let i in screen) {
-        str += i + ": " + screen[i] + "<br/>";
-    }
-    showFullscreenText(str);
-}
-
-// showDisplaySize();
