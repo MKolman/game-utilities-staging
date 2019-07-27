@@ -1,5 +1,21 @@
-// works out the X, Y position of the click inside the canvas from the X, Y position on the page
+function showFullscreenCanvas() {
+    logGA('draw');
+    let container = getFullscreenBg();
+    let canvas = document.createElement("canvas");
+    canvas.className = "fullscreen-bg";
+    canvas.width = 2*window.innerWidth;
+    canvas.height = 2*window.innerHeight;
+    container.prepend(canvas);
 
+    let undo = document.createElement("div");
+    undo.innerHTML = "↺";
+    undo.className = "fullscreen-undo";
+    container.appendChild(undo);
+
+    initializeDraw(canvas);
+}
+
+// works out the X, Y position of the click inside the canvas from the X, Y position on the page
 function getPosition(mouseEvent, sigCanvas) {
     var rect = sigCanvas.getBoundingClientRect();
     return {
