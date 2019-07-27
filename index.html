@@ -1,59 +1,12 @@
+---
+---
 <!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Maks Kolman">
-    <link rel="shortcut icon" type="image/png" href="img/logo_256.png"/>
-    <title>Play Now</title>
-    <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="style.css">
-    <!-- PWA stuff -->
-    <link rel="manifest" href="manifest.json">
-    <!-- Add iOS meta tags and icons -->
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="apple-mobile-web-app-title" content="Weather PWA">
-    <link rel="apple-touch-icon" href="img/logo_152.png">
-    <!-- Add description here -->
-    <meta name="description" content="Helper apps to play board games">
-    <!-- Address bar theme-color -->
-    <meta name="theme-color" content="#D32F2F" />
-    <!-- One Graph Sharing properties -->
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Play Now" />
-    <meta property="og:description" content="Helper apps to play board games" />
-    <meta property="og:image" content="https://www.kolman.si/game-utilities/img/splash.png" />
-    <!-- Google analytics -->
-    <script async="" src="https://www.google-analytics.com/analytics.js"></script>
-</head>
+{% include head.html %}
 <body>
     <div class="container">
-        <span onclick="showFullscreenCanvas();" class="btn" style="font-family: 'Cookie', Helvetica, sans-serif;">
-            <span>DRAW</span>
-        </span>
-        <span onclick="showFullscreenInput();" class="btn" style="font-family: 'monospace';">
-            <span>TYPE<span class="blink">|</span></span>
-        </span>
-        <h1>RANDOM WORD
-            <input class="lang" type="radio" name="lang" id="lang-gb" value="gb" checked=""/><label for="lang-gb"><img src="img/gb_flag.png"/></label><input class="lang" type="radio" name="lang" id="lang-si" value="si"/><label for="lang-si"><img src="img/si_flag.png"/></label>
-        </h1>
-        <span onclick="showRandomWord('unique');" class="btn" style="font-family: 'serif';">
-            <span>UNIQUE</span>
-        </span>
-        <span onclick="showRandomWord('alias');" class="btn" style="font-family: 'serif';">
-            <span>ALIAS</span>
-        </span>
-        <h1> SCORE </h1>
-        <span class="btn scr">
-            <span onclick="changeScore(-5, event);">-5</span><span onclick="changeScore(-1, event);" class="border">-1</span><input type="number" value="0"><span onclick="changeScore(1, event);" class="border">+1</span><span onclick="changeScore(5, event);">+5</span>
-        </span>
+        {% include buttons.html %}
     </div>
-    <div class="footer">
-        <div class="container">
-            Hosted on <a href="https://github.com/MKolman/game-utilities">GitHub</a>. Go to the <a href="https://www.kolman.si">home page</a>.
-        </div>
-    </div>
+    {% include footer.html %}
   <script type="text/javascript" src="js/words.js"></script>
   <script type="text/javascript" src="js/draw.js"></script>
   <script type="text/javascript" src="js/actions.js"></script>

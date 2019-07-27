@@ -1,0 +1,44 @@
+.fullscreenify {
+    white-space: nowrap;
+    display: inline-block;
+
+    &.vertical {
+        height: 100%;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+    }
+}
+
+.fullscreen-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    background-color: #eee;
+    input {
+        margin-top: 0em;
+        text-align: center;
+        border: none;
+        font-size: 3em;
+        width: 100%;
+    }
+    .fullscreen-close, .fullscreen-undo {
+        position: fixed;
+        left: 0.1em;
+        font-size: 3em;
+        height: 1.5em;
+        width: 1.5em;
+        color: $theme-color;
+        text-align: center;
+        cursor: pointer;
+        font-weight: bold;
+        &.fullscreen-close {
+            top: 0.1em;
+        }
+        &.fullscreen-undo {
+            bottom: 0.1em;
+        }
+    }
+}

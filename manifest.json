@@ -1,34 +1,36 @@
+---
+---
 {
-  "name": "Play Now",
-  "short_name": "Play Now",
+  "name": "{{ site.title }}",
+  "short_name": "{{ site.title }}",
   "icons": [{
-    "src": "/game-utilities/img/logo_128.png",
+    "src": "{{ '/img/logo_128.png' | relative_url }}",
       "sizes": "128x128",
       "type": "image/png"
     }, {
-      "src": "/game-utilities/img/logo_144.png",
+      "src": "{{ '/img/logo_144.png' | relative_url }}",
       "sizes": "144x144",
       "type": "image/png"
     }, {
-      "src": "/game-utilities/img/logo_152.png",
+      "src": "{{ '/img/logo_152.png' | relative_url }}",
       "sizes": "152x152",
       "type": "image/png"
     }, {
-      "src": "/game-utilities/img/logo_192.png",
+      "src": "{{ '/img/logo_192.png' | relative_url }}",
       "sizes": "192x192",
       "type": "image/png"
     }, {
-      "src": "/game-utilities/img/logo_256.png",
+      "src": "{{ '/img/logo_256.png' | relative_url }}",
       "sizes": "256x256",
       "type": "image/png"
     }, {
-      "src": "/game-utilities/img/logo_512.png",
+      "src": "{{ '/img/logo_512.png' | relative_url }}",
       "sizes": "512x512",
       "type": "image/png"
     }],
-  "start_url": "/game-utilities/?pwa=pwa",
+  "start_url": "{{ '/?pwa=pwa' | relative_url }}",
   "display": "standalone",
-  "background_color": "#EEEEEE",
-  "theme_color": "#D32F2F",
+  "background_color": "{{ site.color.bg }}",
+  "theme_color": "{{ site.color.theme }}",
   "orientation": "natural"
 }

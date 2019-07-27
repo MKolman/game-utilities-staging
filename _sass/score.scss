@@ -1,0 +1,38 @@
+// Depends on button.scss
+.btn.scr {
+    cursor: default;
+    display: inline-block;
+    > span {
+        cursor: pointer;
+        width: 19%;
+        display: inline-block;
+        height: 100%;
+        font-size: smaller;
+        padding-top: 0.33em;
+        &.border {
+            border-right: $bg-color 2px solid;
+            border-left: $bg-color 2px solid;
+        }
+    }
+    > input {
+        width: 20%;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        border: none;
+        font-size: 1em;
+        text-align: center;
+    }
+}
+/* Hide HTML5 Up and Down arrows. */
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
