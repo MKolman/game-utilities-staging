@@ -4,7 +4,7 @@
 const CACHE_NAME = 'static-cache-v4';
 
 const FILES_TO_CACHE = [
-  'index.html', 'js/draw.js', 'js/words.js', 'js/actions.js', 'style.css',
+  'index.html', 'js/draw.js', 'js/words.js', 'js/actions.js', 'css/style.css',
   'manifest.json', 'img/logo_256.png'];
 
 self.addEventListener('install', (evt) => {
