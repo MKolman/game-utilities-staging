@@ -1,11 +1,23 @@
+---
+---
+
 'use strict';
 
 // Update cache names any time any of the cached files change.
 const CACHE_NAME = 'static-cache-v4';
 
 const FILES_TO_CACHE = [
-  'index.html', 'js/script.js', 'css/style.css',
-  'manifest.json', 'img/logo_256.png'];
+  "{{ 'index.html' | relative_url }}",
+  "{{ 'css/style.css' | relative_url }}",
+  "{{ 'js/script.js' | relative_url }}",
+  "{{ 'manifest.json' | relative_url }}",
+  "{{ 'img/logo_256.png' | relative_url }}",
+  "{{ 'img/en_flag.svg' | relative_url }}",
+  "{{ 'img/si_flag.svg' | relative_url }}",
+
+  "{{ 'rules' | relative_url }}",
+  "{{ 'css/rules.css' | relative_url }}",
+];
 
 self.addEventListener('install', (evt) => {
   console.log('[ServiceWorker] Install');

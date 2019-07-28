@@ -1,0 +1,40 @@
+---
+rules:
+  - src: "img/unique/unique_rules_1.svg"
+    desc: "Pick a random word and show it to other players."
+  - src: "img/unique/unique_rules_2.svg"
+    desc: "Other players write and compare hints for you."
+  - src: "img/unique/unique_rules_3.svg"
+    desc: "They remove duplicate hints."
+  - src: "img/unique/unique_rules_4.svg"
+    desc: "You can look at the remaining hints."
+  - src: "img/unique/unique_rules_5.svg"
+    desc: "You can guess the word or pass."
+style: "css/rules.css"
+---
+<!DOCTYPE html>
+{% include head.html %}
+<body>
+    <div class="container">
+        <h1> <a href="{{ '/' | relative_url }}"> Back </a></h1>
+        {% for rule in page.rules %}
+            <h1> {{ forloop.index }} {{ rule.desc }} </h1>
+            <div class="centered">
+                <img class="size-limit" src="{{ rule.src }}" alt="{{ rule.desc }}"/>
+            </div>
+        {% endfor %}
+        <h1> <a href="{{ '/' | relative_url }}"> Play Now </a></h1>
+    </div>
+    {% include footer.html %}
+    {% include ga.html %}
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', () => {
+            navigator.serviceWorker.register('service-worker.js')
+                .then((reg) => {
+                  console.log('Service worker registered.', reg);
+                });
+          });
+        }
+    </script>
+</body>
