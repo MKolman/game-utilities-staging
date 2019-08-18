@@ -1,43 +1,6 @@
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.0.0/workbox-sw.js');
 
-workbox.precaching.precacheAndRoute([
-  {
-    "url": "assets/css/style.css",
-    "revision": "7ae2686727899de1c788d0122bbeaf6a"
-  },
-  {
-    "url": "css/rules.css",
-    "revision": "eeccf35739c4990da5d43ee40c69571e"
-  },
-  {
-    "url": "css/style.css",
-    "revision": "80d32f6686e977e9093a34bb6cced4c7"
-  },
-  {
-    "url": "index.html",
-    "revision": "a4b81b90b7c69e9e50f9a7798f175baf"
-  },
-  {
-    "url": "js/script.js",
-    "revision": "794f955dcb6170f584ed963c94cbddcb"
-  },
-  {
-    "url": "manifest.json",
-    "revision": "a89daf3806c9518eb50b8a0c227fb76a"
-  },
-  {
-    "url": "rules.html",
-    "revision": "b39344b30b656c9bdae5228b6c2f9850"
-  },
-  {
-    "url": "img/en_flag.svg",
-    "revision": "2e9c71c7514c4036f0122b1bdc202c17"
-  },
-  {
-    "url": "img/si_flag.svg",
-    "revision": "c7f8bb0d07a3e1a92d9374be4bab1192"
-  }
-]);
+workbox.precaching.precacheAndRoute([]);
 
 // Cache all images for 30 days
 workbox.routing.registerRoute(

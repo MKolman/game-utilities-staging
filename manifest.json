@@ -28,7 +28,7 @@
       "sizes": "512x512",
       "type": "image/png"
     }],
-  "start_url": "{{ '/?pwa=pwa' | relative_url }}",
+  "start_url": "{{ '/?utm_src=pwa' | relative_url }}",
   "display": "standalone",
   "background_color": "{{ site.color.bg }}",
   "theme_color": "{{ site.color.theme }}",
