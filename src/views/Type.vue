@@ -2,16 +2,21 @@
   <div class="container">
     <router-link to="/" class="close">✕</router-link>
 
-    <input type="text">
-    <div class="btn">
+    <input type="text" v-model="text">
+    <router-link v-bind:to="{ name: 'display', params: { text: text||'placeholder' }}" class="btn">
       <span>SHOW</span>
-    </div>
+    </router-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "type"
+  name: "type",
+  data() {
+    return {
+      text: ""
+    }
+  }
 };
 </script>
 
