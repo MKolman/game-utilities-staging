@@ -14,20 +14,17 @@ export default new Router({
     {
       path: "/rules",
       name: "rules",
-      component: () =>
-        import("./views/Rules.vue")
+      component: () => import("./views/Rules.vue")
     },
     {
       path: "/type",
       name: "type",
-      component: () =>
-        import("./views/Type.vue")
+      component: () => import("./views/Type.vue")
     },
     {
       path: "/display/:text",
       name: "display",
-      component: () =>
-        import("./views/Display.vue")
+      component: () => import("./views/Display.vue")
     }
   ]
 });

@@ -2,8 +2,11 @@
   <div class="container">
     <router-link to="/" class="close">✕</router-link>
 
-    <input type="text" v-model="text">
-    <router-link v-bind:to="{ name: 'display', params: { text: text||'placeholder' }}" class="btn">
+    <input type="text" ref="type" v-model="text" />
+    <router-link
+      v-bind:to="{ name: 'display', params: { text: text || 'placeholder' } }"
+      class="btn"
+    >
       <span>SHOW</span>
     </router-link>
   </div>

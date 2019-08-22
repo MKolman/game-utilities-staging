@@ -1,19 +1,23 @@
 <template>
   <div class="fullscreen">
-    <span id="fullscreenTxt" v-bind:style="{transform: 'scale('+zoom+')'}" v-bind:class="{vertical: isVertical}">{{ $route.params.text }}</span>
+    <span
+      id="fullscreenTxt"
+      v-bind:style="{ transform: 'scale(' + zoom + ')' }"
+      v-bind:class="{ vertical: isVertical }"
+      >{{ $route.params.text }}</span
+    >
     <router-link to="/" class="close">✕</router-link>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "display",
   data() {
     return {
       zoom: 1,
-      isVertical: false,
-    }
+      isVertical: false
+    };
   },
   methods: {
     fullscreenify() {
@@ -23,22 +27,25 @@ export default {
       if (this.isVertical) {
         [width, height] = [height, width];
       }
-      if ((window.innerWidth < window.innerHeight) != (width < height)) {
+      if (window.innerWidth < window.innerHeight != width < height) {
         [width, height] = [height, width];
         this.isVertical = true;
       } else {
         this.isVertical = false;
       }
-      let zoom = Math.min(window.innerWidth/width, window.innerHeight/height);
+      let zoom = Math.min(
+        window.innerWidth / width,
+        window.innerHeight / height
+      );
       this.zoom = zoom * 0.9;
-    },
+    }
   },
-  mounted: function () {
+  mounted: function() {
     this.fullscreenify();
-    window.addEventListener('resize', this.fullscreenify)
+    window.addEventListener("resize", this.fullscreenify);
   },
-  beforeDestroy: function () {
-    window.removeEventListener('resize', this.fullscreenify)
+  beforeDestroy: function() {
+    window.removeEventListener("resize", this.fullscreenify);
   }
 };
 </script>
