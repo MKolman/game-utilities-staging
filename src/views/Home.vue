@@ -32,12 +32,8 @@
         /><label for="lang-si"><img src="img/si_flag.svg" alt="si"/></label>
       </span>
     </h1>
-    <span onclick="showRandomWord('unique');" class="btn" style="font-family: 'serif';">
-        <span>UNIQUE</span>
-    </span>
-    <span onclick="showRandomWord('alias');" class="btn" style="font-family: 'serif';">
-        <span>ALIAS</span>
-    </span>
+    <WordButton v-bind:list="words[lang]['unique']" txt="UNIQUE" />
+    <WordButton v-bind:list="words[lang]['alias']" txt="ALIAS" />
     <Score />
     <h1>
       <router-link to="/rules">Rules</router-link>
@@ -52,11 +48,20 @@
 <script>
 // @ is an alias to /src
 import Score from "@/components/Score.vue";
+import WordButton from "@/components/WordButton.vue";
+import words from "@/data/words.json";
 
 export default {
   name: "home",
   components: {
-    Score
+    Score,
+    WordButton
+  },
+  data() {
+    return {
+      lang: "en",
+      words: words
+    };
   }
 };
 </script>
