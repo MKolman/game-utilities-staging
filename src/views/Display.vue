@@ -1,13 +1,45 @@
 <template>
   <div class="fullscreen">
-    <span>{{ $route.params.text }}</span>
+    <span id="fullscreenTxt" v-bind:style="{transform: 'scale('+zoom+')'}" v-bind:class="{vertical: isVertical}">{{ $route.params.text }}</span>
     <router-link to="/" class="close">✕</router-link>
   </div>
 </template>
 
 <script>
+
 export default {
-  name: "display"
+  name: "display",
+  data() {
+    return {
+      zoom: 1,
+      isVertical: false,
+    }
+  },
+  methods: {
+    fullscreenify() {
+      let element = document.getElementById("fullscreenTxt");
+      let width = element.offsetWidth;
+      let height = element.offsetHeight;
+      if (this.isVertical) {
+        [width, height] = [height, width];
+      }
+      if ((window.innerWidth < window.innerHeight) != (width < height)) {
+        [width, height] = [height, width];
+        this.isVertical = true;
+      } else {
+        this.isVertical = false;
+      }
+      let zoom = Math.min(window.innerWidth/width, window.innerHeight/height);
+      this.zoom = zoom * 0.9;
+    },
+  },
+  mounted: function () {
+    this.fullscreenify();
+    window.addEventListener('resize', this.fullscreenify)
+  },
+  beforeDestroy: function () {
+    window.removeEventListener('resize', this.fullscreenify)
+  }
 };
 </script>
 
@@ -31,8 +63,6 @@ export default {
   text-decoration: none;
 }
 .vertical {
-  & > span {
-    writing-mode: vertical-rl;
-  }
+  writing-mode: vertical-rl;
 }
 </style>
