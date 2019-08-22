@@ -18,6 +18,14 @@ export default {
   data() {
     return {
       text: ""
+    };
+  },
+  mounted() {
+    this.focusInput();
+  },
+  methods: {
+    focusInput() {
+      this.$refs.type.focus();
     }
   }
 };
