@@ -17,7 +17,7 @@ export default {
     style: function() {
       return {
         background:
-          "linear-gradient(110deg, #fdcd3b " +
+          "linear-gradient(90deg, #fdcd3b " +
           this.load * 100 +
           "%, #D32F2F " +
           this.load * 100 +
