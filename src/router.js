@@ -22,6 +22,11 @@ export default new Router({
       component: () => import("./views/Type.vue")
     },
     {
+      path: "/draw",
+      name: "draw",
+      component: () => import("./views/Draw.vue")
+    },
+    {
       path: "/display/:text",
       name: "display",
       component: () => import("./views/Display.vue")

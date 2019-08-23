@@ -1,12 +1,12 @@
 <template>
   <div class="home container">
-    <span
-      onclick="showFullscreenCanvas();"
+    <router-link
+      to="/draw"
       class="btn"
       style="font-family: 'Cookie', Helvetica, sans-serif;"
     >
       <span>DRAW</span>
-    </span>
+    </router-link>
     <router-link to="/type" class="btn" style="font-family: 'monospace';">
       <span>TYPE<span class="blink">|</span></span>
     </router-link>
@@ -67,6 +67,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import url("https://fonts.googleapis.com/css?family=Cookie");
 @import "@/scss/_variables.scss";
 // Button
 .btn {
@@ -89,6 +90,7 @@ export default {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  vertical-align: top;
 }
 
 @media screen and (max-width: 800px) {
