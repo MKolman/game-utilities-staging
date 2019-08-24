@@ -5,7 +5,7 @@ import router from "./router";
 import "./registerServiceWorker";
 
 router.beforeEach((to, from, next) => {
-  document.title = "Play Now | " + to.meta.title;
+  document.title = process.env.VUE_APP_TITLE + " | " + to.meta.title;
   next();
 });
 

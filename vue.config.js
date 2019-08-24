@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: "/game-vue/",
+  publicPath: process.env.BASE_URL,
   pwa: {
     themeColor: "#D32F2F",
     backgroundColor: "#EEEEEE",
