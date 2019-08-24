@@ -62,8 +62,9 @@ export default {
 
     initializeDraw: function() {
       // get references to the canvas element as well as the 2D drawing context
-      let canvas = this.canvas;
-      var context = this.context;
+      let self = this;
+      let canvas = self.canvas;
+      var context = self.context;
       context.scale(2, 2);
       context.strokeStyle = "#444444";
       context.lineJoin = "round";
@@ -80,13 +81,13 @@ export default {
             context.beginPath();
             context.moveTo(coors.x, coors.y);
             this.isDrawing = true;
-            this.linesDrawn.push([[coors.x, coors.y], [coors.x, coors.y]]);
+            self.linesDrawn.push([[coors.x, coors.y], [coors.x, coors.y]]);
           },
           touchmove: function(coors) {
             if (this.isDrawing) {
               context.lineTo(coors.x, coors.y);
               context.stroke();
-              this.linesDrawn[this.linesDrawn.length - 1].push([
+              self.linesDrawn[self.linesDrawn.length - 1].push([
                 coors.x,
                 coors.y
               ]);
