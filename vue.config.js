@@ -1,6 +1,16 @@
 module.exports = {
   publicPath: process.env.BASE_URL,
 
+  css: {
+    loaderOptions: {
+      sass: {
+        data: `
+$theme-color: ${process.VUE_APP_THEME};
+$bg-color: ${process.VUE_APP_BGCOLOR};`
+      }
+    }
+  },
+
   pwa: {
     themeColor: process.env.VUE_APP_THEME,
     name: process.env.VUE_APP_TITLE,

@@ -68,7 +68,6 @@ export default {
 
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css?family=Cookie");
-@import "@/scss/_variables.scss";
 // Button
 .btn {
   // Size

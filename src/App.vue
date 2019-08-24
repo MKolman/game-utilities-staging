@@ -5,8 +5,6 @@
 </template>
 
 <style lang="scss">
-@import "@/scss/_variables.scss";
-
 body {
   margin: 0;
   padding-left: 0.5em;
