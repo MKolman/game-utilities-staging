@@ -1,50 +1,50 @@
 self.__precacheManifest = [
   {
-    "revision": "17f1b9629ea95c402fd0",
+    "revision": "9c1de2ce09a0ebf25179",
     "url": "/game-vue/css/app.4ef84f9e.css"
   },
   {
-    "revision": "17f1b9629ea95c402fd0",
-    "url": "/game-vue/js/app.4db81fdc.js"
+    "revision": "9c1de2ce09a0ebf25179",
+    "url": "/game-vue/js/app.8cee80d9.js"
   },
   {
-    "revision": "6f61d5c9b8a5058b4ddd",
+    "revision": "f4aedf15689edb6e2a52",
     "url": "/game-vue/css/chunk-510f685a.db8aa32d.css"
   },
   {
-    "revision": "6f61d5c9b8a5058b4ddd",
-    "url": "/game-vue/js/chunk-510f685a.ec569389.js"
+    "revision": "f4aedf15689edb6e2a52",
+    "url": "/game-vue/js/chunk-510f685a.b0339f83.js"
   },
   {
-    "revision": "2c43c900481edefa7832",
+    "revision": "29a23100267d5239c6fe",
     "url": "/game-vue/css/chunk-7f85c750.2e85991b.css"
   },
   {
-    "revision": "2c43c900481edefa7832",
-    "url": "/game-vue/js/chunk-7f85c750.adddd724.js"
+    "revision": "29a23100267d5239c6fe",
+    "url": "/game-vue/js/chunk-7f85c750.b1f9963b.js"
   },
   {
-    "revision": "422c5a90b909d521011d",
+    "revision": "d17b476edb231a11ca43",
     "url": "/game-vue/css/chunk-881509b4.3f3c9131.css"
   },
   {
-    "revision": "422c5a90b909d521011d",
-    "url": "/game-vue/js/chunk-881509b4.fb7e0bf5.js"
+    "revision": "d17b476edb231a11ca43",
+    "url": "/game-vue/js/chunk-881509b4.5168b781.js"
   },
   {
-    "revision": "29ef080617204e697654",
+    "revision": "ce444031e497ca081e86",
     "url": "/game-vue/css/chunk-b45bd6d0.772a5efc.css"
   },
   {
-    "revision": "29ef080617204e697654",
-    "url": "/game-vue/js/chunk-b45bd6d0.b00b93a8.js"
+    "revision": "ce444031e497ca081e86",
+    "url": "/game-vue/js/chunk-b45bd6d0.777c750b.js"
   },
   {
-    "revision": "8d2d52ae3674af792d72",
-    "url": "/game-vue/js/chunk-vendors.3a422538.js"
+    "revision": "232de485d00c3c482f07",
+    "url": "/game-vue/js/chunk-vendors.ba901165.js"
   },
   {
-    "revision": "49a748d7a70a5deb653f1bfb284a30e9",
+    "revision": "78296b31dbf8b42af55f40d16c641f44",
     "url": "/game-vue/index.html"
   },
   {
