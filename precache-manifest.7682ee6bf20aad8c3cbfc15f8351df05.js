@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "9c1de2ce09a0ebf25179",
+    "revision": "94fca42ad411c2a3d135",
     "url": "/game-vue/css/app.4ef84f9e.css"
   },
   {
-    "revision": "9c1de2ce09a0ebf25179",
-    "url": "/game-vue/js/app.8cee80d9.js"
+    "revision": "94fca42ad411c2a3d135",
+    "url": "/game-vue/js/app.b88ad0e3.js"
   },
   {
     "revision": "f4aedf15689edb6e2a52",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/game-vue/js/chunk-vendors.ba901165.js"
   },
   {
-    "revision": "0caf7c01d2c257276ff6b30ef85e3ddb",
+    "revision": "3335ecdb932090d40b1f85fc05d48b9d",
     "url": "/game-vue/index.html"
   },
   {
@@ -72,11 +72,11 @@ self.__precacheManifest = [
     "url": "/game-vue/img/unique/unique_rules_2.svg"
   },
   {
-    "revision": "0c1f1eca1f68a7a9ec252e35d19b7aa0",
-    "url": "/game-vue/img/unique/unique_rules_3.svg"
-  },
-  {
     "revision": "2463adeeffd22d9ae6aadc48c90592b1",
     "url": "/game-vue/img/unique/unique_rules_5.svg"
+  },
+  {
+    "revision": "0c1f1eca1f68a7a9ec252e35d19b7aa0",
+    "url": "/game-vue/img/unique/unique_rules_3.svg"
   }
 ];
