@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/game-vue/js/chunk-vendors.ba901165.js"
   },
   {
-    "revision": "78296b31dbf8b42af55f40d16c641f44",
+    "revision": "0caf7c01d2c257276ff6b30ef85e3ddb",
     "url": "/game-vue/index.html"
   },
   {
