@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "db489946c818edf38872",
+    "revision": "61e787466db30c21c536",
     "url": "/game-vue/css/app.4ef84f9e.css"
   },
   {
-    "revision": "db489946c818edf38872",
-    "url": "/game-vue/js/app.c2503f09.js"
+    "revision": "61e787466db30c21c536",
+    "url": "/game-vue/js/app.270ba71b.js"
   },
   {
     "revision": "f4aedf15689edb6e2a52",
@@ -40,11 +40,11 @@ self.__precacheManifest = [
     "url": "/game-vue/js/chunk-b45bd6d0.777c750b.js"
   },
   {
-    "revision": "232de485d00c3c482f07",
-    "url": "/game-vue/js/chunk-vendors.ba901165.js"
+    "revision": "8293fed054300e658232",
+    "url": "/game-vue/js/chunk-vendors.0bf1fd1b.js"
   },
   {
-    "revision": "82b5e85d108c863faccde8c8c6414faa",
+    "revision": "ba3295ef22a33e0c938e538a015fbfa7",
     "url": "/game-vue/index.html"
   },
   {
