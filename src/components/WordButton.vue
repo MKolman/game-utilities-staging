@@ -17,9 +17,13 @@ export default {
     style: function() {
       return {
         background:
-          "linear-gradient(90deg, #fdcd3b " +
+          "linear-gradient(90deg, " +
+          this.colorLeft +
+          " " +
           this.load * 100 +
-          "%, #D32F2F " +
+          "%, " +
+          this.colorRight +
+          " " +
           this.load * 100 +
           "%)"
       };
@@ -29,11 +33,33 @@ export default {
     randomElement: function(collection) {
       return collection[Math.floor(Math.random() * collection.length)];
     },
+    animateButton: function() {
+      let colors = ["#D32F2F", "#fdcd3b", "blue", "green"];
+      let section = 0,
+        stepsTotal = 100,
+        step = 0;
+      this.colorRight = colors[section];
+      this.colorLeft = colors[section + 1];
+      this.interval = setInterval(() => {
+        step += 1;
+        this.load += (colors.length - 1) / stepsTotal;
+        if (step > stepsTotal) {
+          clearInterval(this.interval);
+        }
+        if (this.load > 1) {
+          section += 1;
+          this.colorRight = colors[section];
+          this.colorLeft = colors[section + 1];
+          this.load = 0;
+        }
+      }, 3000 / stepsTotal);
+    },
     showRandomWord: function() {
       if (this.timeout) {
         this.load = 0;
         clearTimeout(this.timeout);
         clearInterval(this.interval);
+        this.colorRight = "#D32F2F";
         this.timeout = null;
         this.interval = null;
         return;
@@ -46,15 +72,14 @@ export default {
           }
         });
       }, 3000);
-      let steps = 100;
-      this.interval = setInterval(() => {
-        this.load += 1 / steps;
-      }, 3000 / steps);
+      this.animateButton();
     }
   },
   data() {
     return {
       load: 0,
+      colorLeft: "#fdcd3b",
+      colorRight: "#D32F2F",
       timeout: null,
       interval: null
     };
