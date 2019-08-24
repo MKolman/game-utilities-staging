@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/game-vue/precache-manifest.7682ee6bf20aad8c3cbfc15f8351df05.js"
+  "/game-vue/precache-manifest.33f40844d73984b5ff12fae67030c0e3.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "game-utilities"});
