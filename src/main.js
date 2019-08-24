@@ -4,9 +4,24 @@ import App from "./App.vue";
 import router from "./router";
 import "./registerServiceWorker";
 
+router.beforeEach((to, from, next) => {
+  document.title = "Play Now | " + to.meta.title;
+  next();
+});
+
 Vue.use(VueAnalytics, {
   id: "UA-42885055-4",
-  router
+  router,
+  autoTracking: {
+    pageviewTemplate(route) {
+      return {
+        page:
+          window.location.pathname + window.location.search + "#" + route.name,
+        title: document.title,
+        location: window.location.href
+      };
+    }
+  }
 });
 
 Vue.config.productionTip = false;

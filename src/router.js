@@ -9,27 +9,32 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      meta: { title: "Home" }
     },
     {
       path: "/rules",
       name: "rules",
-      component: () => import("./views/Rules.vue")
+      component: () => import("./views/Rules.vue"),
+      meta: { title: "Rules" }
     },
     {
       path: "/type",
       name: "type",
-      component: () => import("./views/Type.vue")
+      component: () => import("./views/Type.vue"),
+      meta: { title: "Type" }
     },
     {
       path: "/draw",
       name: "draw",
-      component: () => import("./views/Draw.vue")
+      component: () => import("./views/Draw.vue"),
+      meta: { title: "Draw" }
     },
     {
       path: "/display/:text",
       name: "display",
-      component: () => import("./views/Display.vue")
+      component: () => import("./views/Display.vue"),
+      meta: { title: "Display" }
     }
   ]
 });
