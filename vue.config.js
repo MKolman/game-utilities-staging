@@ -1,3 +1,3 @@
 module.exports = {
-  publicPath: '/game-vue/'
-}
+  publicPath: "/game-vue/"
+};
