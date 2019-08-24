@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "staging": "vue-cli-service build --mode staging && gh-pages -d dist --remote staging",
     "deploy": "vue-cli-service build && gh-pages -d dist",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,10 +17,11 @@
     "vue-router": "^3.0.3"
   },
   "devDependencies": {
+    "@vue/cli": "^4.0.0-rc.0",
     "@vue/cli-plugin-babel": "^3.10.0",
     "@vue/cli-plugin-eslint": "^3.10.0",
-    "@vue/cli-plugin-pwa": "^3.10.0",
-    "@vue/cli-service": "^3.10.0",
+    "@vue/cli-plugin-pwa": "^4.0.0-rc.0",
+    "@vue/cli-service": "^4.0.0-rc.0",
     "@vue/eslint-config-prettier": "^5.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
