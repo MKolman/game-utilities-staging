@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c0fe53cad2b1d4990628",
-    "url": "/game-utilities-staging/css/app.d768786f.css"
+    "revision": "fbd3382af42ea717b867",
+    "url": "/game-utilities-staging/css/app.bc824d01.css"
   },
   {
     "revision": "4750e6c1cfeedb404764",
@@ -48,12 +48,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/img/unique/unique_rules_5.svg"
   },
   {
-    "revision": "63ce4a2aa3eaef64b67e6fca62607294",
+    "revision": "9cc85b9edd7873e1c90f545e700c5f4b",
     "url": "/game-utilities-staging/index.html"
   },
   {
-    "revision": "c0fe53cad2b1d4990628",
-    "url": "/game-utilities-staging/js/app.ebba1cc3.js"
+    "revision": "fbd3382af42ea717b867",
+    "url": "/game-utilities-staging/js/app.55dff65b.js"
   },
   {
     "revision": "4750e6c1cfeedb404764",
