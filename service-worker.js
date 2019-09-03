@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/game-utilities-staging/precache-manifest.0edd921ce5409f1752e1528d1aeadfff.js"
+  "/game-utilities-staging/precache-manifest.cb78c6ba974b0ac60e5405060633fff1.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "game-utilities"});
