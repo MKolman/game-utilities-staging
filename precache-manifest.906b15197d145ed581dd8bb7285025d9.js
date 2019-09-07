@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a51f5556d971a99068b9",
+    "revision": "7ed0e940c3f8c88d31f7",
     "url": "/game-utilities-staging/css/app.54e7a5ee.css"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/css/chunk-13cf5be0.faa8a09e.css"
   },
   {
-    "revision": "c5b60505315ab61ef470",
+    "revision": "8788b81aa74bd04494eb",
     "url": "/game-utilities-staging/css/chunk-46398acb.a72899fb.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/css/chunk-c23e0b36.cc38cb0f.css"
   },
   {
-    "revision": "af5a25a2045083308cc6",
-    "url": "/game-utilities-staging/css/chunk-cfaa0a6c.7fcffbce.css"
+    "revision": "b9d0e621e9ca5ba4e050",
+    "url": "/game-utilities-staging/css/chunk-dcec0980.e51c89c1.css"
   },
   {
     "revision": "9bd64e4e6b31a6b92b82",
@@ -56,20 +56,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/img/unique/unique_rules_5.svg"
   },
   {
-    "revision": "22764df334c3843d429a4797a0ee88f5",
+    "revision": "9537f72e415e6192b29b7a761bfc7a7b",
     "url": "/game-utilities-staging/index.html"
   },
   {
-    "revision": "a51f5556d971a99068b9",
-    "url": "/game-utilities-staging/js/app.83a35496.js"
+    "revision": "7ed0e940c3f8c88d31f7",
+    "url": "/game-utilities-staging/js/app.eb9137ce.js"
   },
   {
     "revision": "886a61f0e7a33edb8714",
     "url": "/game-utilities-staging/js/chunk-13cf5be0.08552319.js"
   },
   {
-    "revision": "c5b60505315ab61ef470",
-    "url": "/game-utilities-staging/js/chunk-46398acb.4567f7bc.js"
+    "revision": "8788b81aa74bd04494eb",
+    "url": "/game-utilities-staging/js/chunk-46398acb.a0a410b4.js"
   },
   {
     "revision": "a1f0c381f45a23be7a68",
@@ -80,8 +80,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/js/chunk-c23e0b36.511e4534.js"
   },
   {
-    "revision": "af5a25a2045083308cc6",
-    "url": "/game-utilities-staging/js/chunk-cfaa0a6c.e464f081.js"
+    "revision": "b9d0e621e9ca5ba4e050",
+    "url": "/game-utilities-staging/js/chunk-dcec0980.9fe30cb5.js"
   },
   {
     "revision": "9bd64e4e6b31a6b92b82",
