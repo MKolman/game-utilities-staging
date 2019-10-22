@@ -1,7 +1,7 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "53088e7c5a25bb433ff4",
-    "url": "/game-utilities-staging/css/app.502a1e43.css"
+    "revision": "e4b156116a03b93f7916",
+    "url": "/game-utilities-staging/css/app.d072ffe0.css"
   },
   {
     "revision": "a0575471b49c5fea40a3",
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/css/chunk-d4f9da04.9830d7f1.css"
   },
   {
-    "revision": "1141acfd14da310f6815",
+    "revision": "c5e2744274a992854037",
     "url": "/game-utilities-staging/css/chunk-vendors.33fbaed9.css"
   },
   {
@@ -64,12 +64,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/img/unique/unique_rules_5.svg"
   },
   {
-    "revision": "01458b9461150873744a0d2fa29cf3b9",
+    "revision": "ec80ffd790747d98603dcbbbdcfd5182",
     "url": "/game-utilities-staging/index.html"
   },
   {
-    "revision": "53088e7c5a25bb433ff4",
-    "url": "/game-utilities-staging/js/app.cfe3d43e.js"
+    "revision": "e4b156116a03b93f7916",
+    "url": "/game-utilities-staging/js/app.24f80e61.js"
   },
   {
     "revision": "a0575471b49c5fea40a3",
@@ -84,8 +84,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/js/chunk-201b3422.0c7d9e70.js"
   },
   {
-    "revision": "692833ed7153b8e09b1b",
-    "url": "/game-utilities-staging/js/chunk-2d22d746.c400848b.js"
+    "revision": "e8f62147edd094b291c0",
+    "url": "/game-utilities-staging/js/chunk-2d22d746.aacb13dc.js"
   },
   {
     "revision": "50dcaa82e7594e418b23",
@@ -108,8 +108,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/game-utilities-staging/js/chunk-d4f9da04.efbf7178.js"
   },
   {
-    "revision": "1141acfd14da310f6815",
-    "url": "/game-utilities-staging/js/chunk-vendors.30d6f5e4.js"
+    "revision": "c5e2744274a992854037",
+    "url": "/game-utilities-staging/js/chunk-vendors.073964c9.js"
   },
   {
     "revision": "d884aa017c6b7ab0b9dfd0a2361d9748",
